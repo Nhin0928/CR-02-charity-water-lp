@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
-h1 { font-size: 2.8rem; }
+h1 { font-size: 3.0rem; }
 h2 { font-size: 2.2rem; }
 h3 { font-size: 1.8rem; }
 
@@ -69,9 +69,6 @@ header {
   will-change: transform;
 }
 
-header.shrink {
-  padding: 8px 0;
-}
 
 .header-content {
   display: flex;
@@ -80,7 +77,7 @@ header.shrink {
 }
 
 .logo {
-  height: 22px; /* Smaller logo */
+  height: 30px; /* Smaller logo */
   cursor: pointer;
   transition: opacity 0.3s;
 }
@@ -98,7 +95,7 @@ nav ul {
 }
 
 nav li {
-  margin-left: 20px; /* Reduced spacing */
+  margin-left: 30px; /* Reduced spacing */
   position: relative;
 }
 
@@ -110,7 +107,7 @@ nav li {
   color: var(--black);
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.85rem; /* Smaller font */
+  font-size: 1.15rem; /* Smaller font */
   cursor: pointer;
   background: none;
   border: none;
@@ -140,7 +137,7 @@ nav li {
   padding: 8px 12px; /* Smaller padding */
   text-decoration: none;
   display: block;
-  font-size: 0.85rem; /* Smaller font */
+  font-size: 1.10rem; /* Smaller font */
 }
 
 .dropdown-content a:hover, 
@@ -250,7 +247,7 @@ nav li {
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   cursor: pointer;
   border: none;
   margin-top: 10px;
@@ -280,7 +277,7 @@ nav li {
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   margin: 0 10px;
 }
 
@@ -954,7 +951,7 @@ footer {
     font-size: 2.5rem;
   }
   
-  h1 { font-size: 2.5rem; }
+  h1 { font-size: 2.65rem; }
   h2 { font-size: 2rem; }
   
   .hero .container {
