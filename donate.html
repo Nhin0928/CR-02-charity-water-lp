@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header class="main-header">
+    <div class="header-container">
+        <a href="index.html" class="logo-link" id="homepage-link">
+            <h1 class="logo">charity: water</h1>
+        </a>
+        <nav class="main-nav"><index class="html"></index></nav>
+    </div>
+</header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>charity: water | Change Lives With $10</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="container">
+      <a href="index.html"><img src="img/cw_logo-2.png" alt="charity: water logo" class="logo"></a>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <button class="dropbtn">TAKE ACTION <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="donate.html">Donate</a>
+              <a href="fundraise.html">Fundraise</a>
+              <a href="volunteer.html">Volunteer</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <button class="dropbtn">ABOUT US <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="our-story.html">Our Story</a>
+              <a href="impact.html">Impact</a>
+              <a href="team.html">Team</a>
+            </div>
+          </li>
+          <li><a href="why-water.html" class="nav-link">WHY WATER?</a></li>
+          <li><a href="login.html" class="nav-link">Log in</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="donate-page">
+    <section class="donate-hero">
+      <div class="container">
+        <h1>Make a Lasting Impact With Your Donation</h1>
+        <p>Every dollar brings clean water to people in need. See how your contribution makes a difference.</p>
+      </div>
+    </section>
+
+    <section class="donation-impact">
+      <div class="container">
+        <h2>Your Donation at Work</h2>
+        <div class="impact-grid">
+          <div class="impact-card">
+            <div class="impact-icon">
+              <i class="fas fa-hand-holding-water"></i>
+            </div>
+            <h3>$10</h3>
+            <p>Provides clean water for one person for a year</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>$50</h3>
+            <p>Supports a family of five with clean water</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <h3>$100</h3>
+            <p>Helps provide water for a classroom of children</p>
+          </div>
+          <div class="impact-card">
+          <div class="impact-icon">
+            <i class="fas fa-people-roof"></i> <!-- updated icon -->
+          </div>
+          <h3>$500</h3>
+          <p>Can support an entire small community</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="donation-options">
+      <div class="container">
+        <h2>How much would you like to contribute?</h2>
+        <div class="donate-options">
+          <button class="donate-option" data-amount="10">$10</button>
+          <button class="donate-option" data-amount="25">$25</button>
+          <button class="donate-option" data-amount="50">$50</button>
+          <button class="donate-option" data-amount="100">$100</button>
+          <button class="donate-option" data-amount="500">$500</button>
+          <button class="donate-option" data-amount="other">Other</button>
+        </div>
+        
+        <div class="custom-amount" id="customAmountContainer" style="display: none;">
+          <label for="customAmount">Enter your amount:</label>
+          <input type="number" id="customAmount" min="1" step="1">
+          <button id="submitCustomAmount">Submit</button>
+        </div>
+        
+        <div class="payment-options" id="paymentOptions">
+          <h3>Select Payment Method</h3>
+          <div class="payment-methods">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Venmo_Logo.svg" alt="Venmo" class="payment-option" data-method="venmo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/1200px-Apple_Pay_logo.svg.png" alt="Apple Pay" class="payment-option" data-method="applepay">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png" alt="Credit Card" class="payment-option" data-method="creditcard">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/PayPal_Logo_Icon_2014.svg/1200px-PayPal_Logo_Icon_2014.svg.png" alt="PayPal" class="payment-option" data-method="paypal">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="donation-benefits">
+      <div class="container">
+        <h2>Why Donate to charity: water?</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <i class="fas fa-check-circle"></i>
+            <h3>100% Model</h3>
+            <p>Every dollar you give goes directly to water projects</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3>Proven Impact</h3>
+            <p>See exactly where your money goes with our project maps</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-receipt"></i>
+            <h3>Tax Deductible</h3>
+            <p>Get a receipt for your tax-deductible donation</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-lock"></i>
+            <h3>Secure Giving</h3>
+            <p>Your donation is protected with bank-level security</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- Consistent Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#">Contact</a>
+        <a href="#">Financials</a>
+        <a href="#">Careers</a>
+      </div>
+      <p>&copy; 2025 charity: water. 100% of donations fund water projects.</p>
+    </div>
+    <a href="https://www.charitywater.org/global-water-crisis" target="_blank" class="cta-button">
+      More information <i class="fas fa-external-link-alt"></i>
+    </a>
+  </footer>
+
+  <!-- Donation Success Modal -->
+  <div class="modal" id="donationModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <h2>Thank You for Your Donation!</h2>
+      <p id="donationMessage">Your generous gift of $<span id="donationAmount">10</span> will help provide clean water to those in need.</p>
+      <p>We'll send you updates on how your donation is making an impact.</p>
+      <div class="celebration">🎉</div>
+      <button class="cta-button" id="closeModalButton">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

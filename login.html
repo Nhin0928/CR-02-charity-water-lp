@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundraise for Clean Water | charity: water</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Consistent Header -->
+  <header>
+    <div class="container">
+      <a href="index.html"><img src="img/cw_logo-2.png" alt="charity: water logo" class="logo"></a>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <button class="dropbtn">TAKE ACTION <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="donate.html">Donate</a>
+              <a href="fundraise.html">Fundraise</a>
+              <a href="volunteer.html">Volunteer</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <button class="dropbtn">ABOUT US <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <a href="our-story.html">Our Story</a>
+              <a href="impact.html">Impact</a>
+              <a href="team.html">Team</a>
+            </div>
+          </li>
+          <li><a href="why-water.html" class="nav-link">WHY WATER?</a></li>
+          <li><a href="login.html" class="nav-link">Log in</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="login-page">
+    <div class="container">
+      <div class="login-container">
+        <h1>Log In</h1>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+          <button type="submit" class="cta-button">Log In</button>
+        </form>
+
+        <div class="social-login">
+          <p>Or log in with:</p>
+          <button class="social-button google">
+            <i class="fab fa-google"></i> Google
+          </button>
+          <button class="social-button facebook">
+            <i class="fab fa-facebook-f"></i> Facebook
+          </button>
+        </div>
+
+        <div class="signup-prompt">
+          <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<!-- Consistent Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#">Contact</a>
+        <a href="#">Financials</a>
+        <a href="#">Careers</a>
+      </div>
+      <p>&copy; 2025 charity: water. 100% of donations fund water projects.</p>
+    </div>
+    <a href="https://www.charitywater.org/global-water-crisis" target="_blank" class="cta-button">
+      More information <i class="fas fa-external-link-alt"></i>
+    </a>
+  </footer>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // In a real implementation, this would validate credentials
+      alert('Login successful! Redirecting to your dashboard...');
+      // window.location.href = 'dashboard.html';
+    });
+  </script>
+</body>
+</html>

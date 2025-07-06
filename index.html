@@ -5,34 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>charity: water | Change Lives With $10</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <!-- Navigation -->
   <header>
     <div class="container">
-      <img src="img/cw_logo-2.png" alt="charity: water logo" class="logo">
+      <a href="index.html"><img src="img/cw_logo-2.png" alt="charity: water logo" class="logo"></a>
       <nav>
         <ul>
           <li class="dropdown">
             <button class="dropbtn">TAKE ACTION <i class="fas fa-chevron-down"></i></button>
             <div class="dropdown-content">
-              <a href="#">Donate</a>
-              <a href="#">Fundraise</a>
-              <a href="#">Volunteer</a>
+              <a href="donate.html">Donate</a>
+              <a href="fundraise.html">Fundraise</a>
+              <a href="volunteer.html">Volunteer</a>
             </div>
           </li>
           <li class="dropdown">
             <button class="dropbtn">ABOUT US <i class="fas fa-chevron-down"></i></button>
             <div class="dropdown-content">
-              <a href="#">Our Story</a>
-              <a href="#">Impact</a>
-              <a href="#">Team</a>
+              <a href="our-story.html">Our Story</a>
+              <a href="impact.html">Impact</a>
+              <a href="team.html">Team</a>
             </div>
           </li>
-          <li><a href="#" class="nav-link">WHY WATER?</a></li>
-          <li><a href="#" class="nav-link">Log in</a></li>
+          <li><a href="why-water.html" class="nav-link">WHY WATER?</a></li>
+          <li><a href="login.html" class="nav-link">Log in</a></li>
         </ul>
       </nav>
     </div>
@@ -65,30 +65,26 @@
       </div>
     </div>
   </section>
-  
-  <script src="script.js"></script>
-</body>
-</html>
 
-<!-- Story Section -->
-<section class="story" id="storySection">
-  <div class="container">
-    <div class="story-content">
-      <div class="story-text">
-        <h2>Meet Letensea</h2>
-        <p>Letensea is 70 years old and lives in Tigray, Ethiopia—a region where clean water is scarce. When conflict destroyed over half the area’s water systems, Letensea had no choice but to walk two hours, twice a day, to fetch water from a dangerous river path.</p>
-        <p>Her only son passed away in 2022, leaving her to raise her 4-year-old grandson, Danay, alone. Carrying five gallons of water wrapped around her chest with a scarf, Letensea risked injury and exhaustion each day just to provide for her family and their small flock of sheep.</p>
-        <p>“I prayed to God every day to bring us clean water,” she says. “Now, it’s easy—saving us time and energy. I even have enough for my sheep to drink.”</p>
-        <p>Thanks to a solar-powered water pump installed by the community with support from CARE and partners, Letensea and nearly 2,000 others now have reliable access to clean water.</p>
-        <p><strong>Your $10</strong> helps fund innovative, life-saving solutions like this—and gives women like Letensea hope and dignity.</p>
-        <a class="read-more-button" href="https://www.care.org/news-and-stories/news/fetching-water-in-northern-ethiopia-a-life-and-death-struggle/" target="_blank" rel="noopener">Read Full Story</a>
-      </div>
-      <div class="story-image right-aligned"> <!-- Added right-aligned class -->
-        <img src="img/Letensea.png" alt="Letensea fetching water in Tigray, Ethiopia">
+  <!-- Story Section -->
+  <section class="story" id="storySection">
+    <div class="container">
+      <div class="story-content">
+        <div class="story-text">
+          <h2>Meet Letensea</h2>
+          <p>Letensea is 70 years old and lives in Tigray, Ethiopia—a region where clean water is scarce. When conflict destroyed over half the area's water systems, Letensea had no choice but to walk two hours, twice a day, to fetch water from a dangerous river path.</p>
+          <p>Her only son passed away in 2022, leaving her to raise her 4-year-old grandson, Danay, alone. Carrying five gallons of water wrapped around her chest with a scarf, Letensea risked injury and exhaustion each day just to provide for her family and their small flock of sheep.</p>
+          <p>"I prayed to God every day to bring us clean water," she says. "Now, it's easy—saving us time and energy. I even have enough for my sheep to drink."</p>
+          <p>Thanks to a solar-powered water pump installed by the community with support from CARE and partners, Letensea and nearly 2,000 others now have reliable access to clean water.</p>
+          <p><strong>Your $10</strong> helps fund innovative, life-saving solutions like this—and gives women like Letensea hope and dignity.</p>
+          <a class="read-more-button" href="https://www.care.org/news-and-stories/news/fetching-water-in-northern-ethiopia-a-life-and-death-struggle/" target="_blank" rel="noopener">Read Full Story</a>
+        </div>
+        <div class="story-image right-aligned">
+          <img src="img/Letensea.png" alt="Letensea fetching water in Tigray, Ethiopia">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Donation CTA -->
   <section id="donateSection" class="donate">
@@ -104,9 +100,12 @@
       </div>
       
       <div class="payment-options" id="paymentOptions">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Venmo_Logo.svg" alt="Venmo" class="payment-option" data-method="venmo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/1200px-Apple_Pay_logo.svg.png" alt="Apple Pay" class="payment-option" data-method="applepay">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png" alt="Credit Card" class="payment-option" data-method="creditcard">
+        <h3>Select Payment Method</h3>
+        <div class="payment-methods">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Venmo_Logo.svg" alt="Venmo" class="payment-option" data-method="venmo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/1200px-Apple_Pay_logo.svg.png" alt="Apple Pay" class="payment-option" data-method="applepay">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png" alt="Credit Card" class="payment-option" data-method="creditcard">
+        </div>
       </div>
     </div>
   </section>
