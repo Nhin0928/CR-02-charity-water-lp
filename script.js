@@ -12,7 +12,7 @@ const initLogo = () => {
 
 // Handle login click
 const initLogin = () => {
-  const loginLink = document.querySelector('a[href="#"].nav-link');
+  const loginLink = document.querySelector('a[href="login.html"].nav-link');
   if (loginLink) {
     loginLink.addEventListener('click', (e) => {
       e.preventDefault();
@@ -23,7 +23,7 @@ const initLogin = () => {
 
 // Handle Why Water click
 const initWhyWater = () => {
-  const whyWaterLink = document.querySelector('a.nav-link[href="#"]');
+  const whyWaterLink = document.querySelector('a.nav-link[href="why-water.html"]');
   if (whyWaterLink) {
     whyWaterLink.addEventListener('click', (e) => {
       e.preventDefault();
@@ -60,6 +60,31 @@ const initDropdowns = () => {
           break;
       }
     });
+  });
+};
+
+// Header scroll effect
+const initHeaderScroll = () => {
+  const header = document.getElementById('mainHeader');
+  let lastScroll = 0;
+  
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll <= 0) {
+      header.classList.remove('shrink');
+      return;
+    }
+    
+    if (currentScroll > lastScroll && !header.classList.contains('shrink')) {
+      // Scrolling down
+      header.classList.add('shrink');
+    } else if (currentScroll < lastScroll && header.classList.contains('shrink')) {
+      // Scrolling up
+      header.classList.remove('shrink');
+    }
+    
+    lastScroll = currentScroll;
   });
 };
 
@@ -234,6 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLogin();
   initWhyWater();
   initDropdowns();
+  initHeaderScroll();
   initDonation();
   initLoginForm();
   highlightCurrentPage();
