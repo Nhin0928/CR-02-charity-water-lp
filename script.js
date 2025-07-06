@@ -4,7 +4,16 @@ const initLogo = () => {
   if (logo) {
     logo.addEventListener('click', (e) => {
       e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const isIndexPage = window.location.pathname.endsWith('index.html') || 
+                         window.location.pathname.endsWith('/');
+      
+      if (isIndexPage) {
+        // On index page - scroll to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        // On other pages - go to index.html
+        window.location.href = 'index.html';
+      }
     });
     logo.style.cursor = 'pointer';
   }
@@ -63,25 +72,34 @@ const initDropdowns = () => {
   });
 };
 
-// Header scroll effect
+// Header scroll effect - completely hide header when scrolling down
 const initHeaderScroll = () => {
   const header = document.getElementById('mainHeader');
+  if (!header) return;
+
   let lastScroll = 0;
+  const headerHeight = header.offsetHeight;
+  
+  // Add this to prevent content jump when header hides
+  document.documentElement.style.scrollPaddingTop = `${headerHeight}px`;
   
   window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll <= 0) {
-      header.classList.remove('shrink');
+      // At top of page - show header
+      header.style.transform = 'translateY(0)';
       return;
     }
     
-    if (currentScroll > lastScroll && !header.classList.contains('shrink')) {
-      // Scrolling down
-      header.classList.add('shrink');
-    } else if (currentScroll < lastScroll && header.classList.contains('shrink')) {
-      // Scrolling up
-      header.classList.remove('shrink');
+    if (currentScroll > lastScroll && currentScroll > headerHeight) {
+      // Scrolling down past header height - hide header completely
+      header.style.transform = `translateY(-${headerHeight}px)`;
+      header.style.boxShadow = 'none'; // Remove shadow when hidden
+    } else if (currentScroll < lastScroll) {
+      // Scrolling up - show header
+      header.style.transform = 'translateY(0)';
+      header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
     }
     
     lastScroll = currentScroll;
